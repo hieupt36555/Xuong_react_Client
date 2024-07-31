@@ -17,7 +17,7 @@ import Oder from "./pages/oder";
 const routeConfig = [
   {
     path: "admin",
-    element:  (<PrivateRoute><AdminLayout /></PrivateRoute>),
+    element: <AdminLayout/>,
     children: [
       {
         path: "",
