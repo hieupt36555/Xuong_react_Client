@@ -38,7 +38,7 @@ function ProductForm({ onSubmit, initialValues }: ProductFormProps) {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get("/categories");
+        const response = await axios.get("https://xuong-react-server-2.onrender.com/categories");
         setCategories(response.data);
 
       } catch (error) {
