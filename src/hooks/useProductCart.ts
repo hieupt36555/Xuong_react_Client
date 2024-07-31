@@ -15,7 +15,7 @@ export function useProductCart() {
 
   const getCartUser = async () => {
     if (!user) return;
-    const { data } = await axios.get(`/carts/user/${user._id}`);
+    const { data } = await axios.get(`https://xuong-react-server-2.onrender.com/carts/user/${user._id}`);
     // console.log("data");
     // alert("hehe")
     setCart(data);
@@ -25,7 +25,7 @@ export function useProductCart() {
     if (!user) return;
     if (!cart) {
       try {
-        await axios.post("/carts", {
+        await axios.post("https://xuong-react-server-2.onrender.com/carts", {
           product,
           quantity,
           user: user._id,
@@ -34,7 +34,7 @@ export function useProductCart() {
       } catch (error) {}
     } else {
       try {
-        await axios.put(`/carts/${cart._id}`, {
+        await axios.put(`https://xuong-react-server-2.onrender.com/carts/${cart._id}`, {
           product,
           quantity,
           user: user._id,
@@ -48,7 +48,7 @@ export function useProductCart() {
     if (!user) return;
     // if (window.confirm("Remove Item Cart")) {
       try {
-        await axios.delete(`/carts/user/${user._id}/product/${productId}`);
+        await axios.delete(`https://xuong-react-server-2.onrender.com/carts/user/${user._id}/product/${productId}`);
         getCartUser();
       } catch (error) {
         console.log(error);

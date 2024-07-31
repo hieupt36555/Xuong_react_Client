@@ -12,7 +12,7 @@ export function useProductOder() {
 
   const getOdertUser = async () => {
     if (!user) return;
-    const { data } = await axios.get(`/orders/user/${user._id}`);
+    const { data } = await axios.get(`https://xuong-react-server-2.onrender.com/orders/user/${user._id}`);
     setOder(data);
     // alert('ok')
   };
@@ -24,7 +24,7 @@ export function useProductOder() {
     if (!user) return;
     if (window.confirm("Remove Item Cart")) {
       try {
-        await axios.delete(`/orders/user/${user._id}/product/${productId}`);
+        await axios.delete(`https://xuong-react-server-2.onrender.com/orders/user/${user._id}/product/${productId}`);
         getOdertUser();
         alert("thanh cong")
       } catch (error) {

@@ -21,7 +21,7 @@ function ClientLayout() {
       setUser(user);
 
       if (!user) return;
-      const { data } = await axios.get(`/carts/user/${user._id}`);
+      const { data } = await axios.get(`https://xuong-react-server-2.onrender.com/carts/user/${user._id}`);
       console.log(data);
       setCart(data);
     } catch (error) { }

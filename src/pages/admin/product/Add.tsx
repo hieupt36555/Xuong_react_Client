@@ -13,7 +13,7 @@ function AdminProductAdd() {
   const onSubmit = async (values: ProductFormParams) => {
     try {
       setLoading(true);
-      await axios.post("/products", values);
+      await axios.post("https://xuong-react-server-2.onrender.com/products", values);
       const Toast = Swal.mixin({
         toast: true,
         position: "top-end",

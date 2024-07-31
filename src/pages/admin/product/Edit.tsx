@@ -12,7 +12,7 @@ function AdminProductEdit() {
 
   const getProduct = async (id: string) => {
     try {
-      const { data } = await axios.get(`http://localhost:3000/products/${id}`);
+      const { data } = await axios.get(`https://xuong-react-server-2.onrender.com/products/${id}`);
       setProduct(data);
     } catch (error) {
       console.log(error);

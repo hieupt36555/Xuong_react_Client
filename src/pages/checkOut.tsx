@@ -52,7 +52,7 @@ function Checkout() {
     if (!user || !cart || !cart?.products.length) return;
     try {
       setLoading(true);
-      await axios.post("/orders", {
+      await axios.post("https://xuong-react-server-2.onrender.com/orders", {
         ...values,
         products: cart.products,
         user: user._id,

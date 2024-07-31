@@ -32,7 +32,7 @@ const Login = () => {
 
   const onSubmit = async (values: LoginFormParams) => {
     try {
-      const { data } = await axios.post("/auth/login", values);
+      const { data } = await axios.post("https://xuong-react-server-2.onrender.com/auth/login", values);
       localStorage.setItem("token", data.token);
       localStorage.setItem("user", JSON.stringify(data.user)); // luu object
 
