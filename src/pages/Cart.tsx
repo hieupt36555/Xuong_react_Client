@@ -28,7 +28,7 @@ function Cart() {
     setIdDelete(id);
   };
   const handleDelete = () =>{
-    removeToCart(idDelete);
+    // removeToCart(idDelete);
     
   }
 
