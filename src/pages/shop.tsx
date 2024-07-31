@@ -17,7 +17,7 @@ const ShopList: React.FC = () => {
     const getAllProduct = async () => {
         try {
           // setLoading(true);
-          const response = await axios.get("https://xuong-react-server-2.onrender.com//products",
+          const response = await axios.get("/products",
             {
               params: {
                 page: page,

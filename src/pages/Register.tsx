@@ -30,7 +30,7 @@ const Register = () => {
 
   const onSubmit = async (data: RegisterFormParams) => {
     try {
-      await axios.post("/auth/register", data);
+      await axios.post("https://xuong-react-server-2.onrender.com/auth/register", data);
       const Toast = Swal.mixin({
         toast: true,
         position: "top-end",
