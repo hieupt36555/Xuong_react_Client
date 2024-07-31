@@ -30,7 +30,7 @@ function ProductForm({ onSubmit, initialValues }: ProductFormProps) {
     if (!title) errors.title = "Can nhap title vao";
 
     if (!image) errors.image = "Can nhap image vao";
-    if (!category) errors.category = "Can nhap category vao";
+    // if (!category) errors.category = "Can nhap category vao";
     if (!price) errors.price = "Can nhap price vao";
     return errors;
   };
