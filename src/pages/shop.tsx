@@ -10,13 +10,13 @@ import Banner from 'src/components/Banner';
 
 const ShopList: React.FC = () => {
     const [products, setProducts] = useState<Product[]>([]);
-    const [loading, setLoading] = useState<boolean>(false);
-    const [page, setPage] = useState<number>(1);
+    // const [loading, setLoading] = useState<boolean>(false);
+    const [page] = useState<number>(1);
     const [totalPages, setTotalPages] = useState<number>(1);
 
     const getAllProduct = async () => {
         try {
-          setLoading(true);
+          // setLoading(true);
           const response = await axios.get("/products",
             {
               params: {
@@ -31,7 +31,7 @@ const ShopList: React.FC = () => {
         } catch (error) {
           console.log(error);
         } finally {
-          setLoading(false);
+          // setLoading(false);
         }
       };
     useEffect(() => {
@@ -82,7 +82,7 @@ const ShopList: React.FC = () => {
           sx={{padding: '20px'}}
           count={totalPages}
           page={page}
-          onChange={(e, value) => setPage(value)}
+          // onChange={(e, value) => setPage(value)}
           color="primary"
           shape="rounded"
         />

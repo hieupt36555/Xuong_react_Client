@@ -29,7 +29,7 @@ function AdminProductList() {
   const [products, setProducts] = useState<Product[]>([]);
   const [idDelete, setIdDelete] = useState<string | null>(null);
   const [sort, setSort] = useState<string>('asc');
-  const [page, setPage] = useState<number>(1);
+  const [page] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
 
 
@@ -202,7 +202,7 @@ function AdminProductList() {
           sx={{padding: '20px'}}
           count={totalPages}
           page={page}
-          onChange={( e, value) => setPage(value)}
+          // onChange={( e, value) => setPage(value)}
           color="primary"
           shape="rounded"
         />
