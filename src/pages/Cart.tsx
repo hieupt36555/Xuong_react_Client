@@ -12,12 +12,12 @@ import { useCart } from "src/contexts/cart";
 import { Link } from "react-router-dom";
 import ConfirmDialog from "src/components/ConfirmDialog";
 import { useState } from "react";
-import { useProductCart } from "src/hooks/useProductCart";
+// import { useProductCart } from "src/hooks/useProductCart";
 
 const labels = ["Image", "Name", "Price", "Quantity", "Option" ];
 function Cart() {
   const { cart } = useCart();
-  const { removeToCart } = useProductCart();
+  // const { removeToCart } = useProductCart();
   const [confirm, setConfirm] = useState(false);
   const [idDelete, setIdDelete] = useState<string | null>(null);
 
@@ -28,7 +28,7 @@ function Cart() {
     setIdDelete(id);
   };
   const handleDelete = () =>{
-    removeToCart(idDelete);
+    // removeToCart(idDelete);
     
   }
 
