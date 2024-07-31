@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Grid, Typography, TextField, Button, Paper } from '@mui/material';
 
 const CheckoutPage = () => {

@@ -2,7 +2,6 @@ import { Box, Typography } from "@mui/material";
 import axios from "axios";
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
-import Banner from "src/components/Banner";
 import Footer from "src/components/footer";
 import Header from "src/components/Header";
 import Loading from "src/components/Loading";

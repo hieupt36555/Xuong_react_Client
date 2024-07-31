@@ -7,7 +7,7 @@ import { useUser } from "src/contexts/user";
 
 export function useProductOder() {
   const { user } = useUser();
-  const { oder, setOder } = useOder();
+  const { setOder } = useOder();
 
 
   const getOdertUser = async () => {

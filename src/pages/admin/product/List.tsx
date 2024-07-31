@@ -1,13 +1,10 @@
 import {
-  Alert,
   Box,
   Button,
-  Container,
   MenuItem,
   Pagination,
   Paper,
   Select,
-  Snackbar,
   Stack,
   Table,
   TableBody,
@@ -16,13 +13,11 @@ import {
   TableHead,
   TableRow,
   TextField,
-  Typography,
 } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ConfirmDialog from "src/components/ConfirmDialog";
-import Flash from "src/components/Flash";
 import { useLoading } from "src/contexts/loading";
 import { Product } from "src/types/Product";
 import Swal from "sweetalert2";
@@ -30,7 +25,6 @@ import Swal from "sweetalert2";
 function AdminProductList() {
   const [query, setQuery] = useState<string>('');
   const { setLoading } = useLoading();
-  const [showFlash, setShowFlash] = useState(false);
   const [confirm, setConfirm] = useState(false);
   const [products, setProducts] = useState<Product[]>([]);
   const [idDelete, setIdDelete] = useState<string | null>(null);
@@ -83,7 +77,7 @@ function AdminProductList() {
   const handleDelete = async () => {
     try {
       await axios.delete("/products/" + idDelete);
-      setShowFlash(true);
+      // setShowFlash(true);
 
       const Toast = Swal.mixin({
         toast: true,
@@ -208,7 +202,7 @@ function AdminProductList() {
           sx={{padding: '20px'}}
           count={totalPages}
           page={page}
-          onChange={(e, value) => setPage(value)}
+          onChange={( e, value) => setPage(value)}
           color="primary"
           shape="rounded"
         />

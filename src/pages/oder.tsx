@@ -1,5 +1,4 @@
 import {
-    Button,
     Container,
     IconButton,
     Stack,
@@ -11,7 +10,6 @@ import {
 
 import { useOder } from "src/contexts/oder";
 import { useProductOder } from "src/hooks/useProductOder";
-import { useEffect } from "react";
   
   const labels = ["Product", "Price", "Quantity", "Subtotal", ""];
   function Oder() {
@@ -69,7 +67,7 @@ import { useEffect } from "react";
     padding: 72,
   });
   
-  const LabelWrapper = styled(Stack)(({ theme }) => ({
+  const LabelWrapper = styled(Stack)(({  }) => ({
     background: "#F9F1E7",
     height: 55,
   }));

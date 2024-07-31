@@ -29,7 +29,7 @@ function AdminProductAdd() {
         icon: "success",
         title: "Them San Pham Thanh Cong!"
       });
-      // nav("/admin");
+      nav("/admin");
     } catch (error) {
       const Toast = Swal.mixin({
         toast: true,

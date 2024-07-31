@@ -1,5 +1,4 @@
 // Footer.js
-import React from 'react';
 import { Box, Typography, Link, TextField, Button } from '@mui/material';
 import { EmojiEvents, Verified, LocalShipping, HeadsetMic } from '@mui/icons-material';
 

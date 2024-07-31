@@ -1,11 +1,9 @@
-import { Badge, Box, Icon, IconButton, Menu, MenuItem, Stack, styled, Typography } from "@mui/material";
-import { Button } from "@mui/material";
+import { Badge, IconButton, Menu, MenuItem, Stack, styled, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { Link } from "react-router-dom";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { useCart } from "src/contexts/cart";
 import React, { useMemo } from "react";
-import { AccountCircle } from "@mui/icons-material";
 
 const menus = [
   {

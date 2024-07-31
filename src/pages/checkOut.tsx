@@ -9,7 +9,6 @@ import {
   Radio,
   RadioGroup,
   Stack,
-  styled,
   Typography,
 } from "@mui/material";
 import Banner from "src/components/Banner";
@@ -22,7 +21,6 @@ import { useCart } from "src/contexts/cart";
 import { useMemo } from "react";
 import { useUser } from "src/contexts/user";
 import { useProductCart } from "src/hooks/useProductCart";
-import { red } from "@mui/material/colors";
 import Swal from "sweetalert2";
 
 type CheckoutFormParams = {
@@ -197,11 +195,3 @@ function Checkout() {
 
 export default Checkout;
 
-const Wrapper = styled(Stack)({
-  paddingTop: 72,
-});
-
-const LabelWrapper = styled(Stack)(({ theme }) => ({
-  background: "#F9F1E7",
-  height: 55,
-}));

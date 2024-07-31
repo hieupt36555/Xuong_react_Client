@@ -9,7 +9,6 @@ import {
 import Banner from "src/components/Banner";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { useCart } from "src/contexts/cart";
-import { useProductCart } from "src/hooks/useProductCart";
 import { Link } from "react-router-dom";
 import ConfirmDialog from "src/components/ConfirmDialog";
 import { useState } from "react";
@@ -17,7 +16,7 @@ import { useState } from "react";
 const labels = ["Image", "Name", "Price", "Quantity", "Option" ];
 function Cart() {
   const { cart } = useCart();
-  const { removeToCart } = useProductCart();
+  // const { removeToCart } = useProductCart();
   const [confirm, setConfirm] = useState(false);
   const [idDelete, setIdDelete] = useState<string | null>(null);
 
@@ -97,7 +96,7 @@ const Wrapper = styled(Stack)({
   padding: 72,
 });
 
-const LabelWrapper = styled(Stack)(({ theme }) => ({
+const LabelWrapper = styled(Stack)(({  }) => ({
   background: "#F9F1E7",
   height: 55,
 }));

@@ -8,8 +8,6 @@ import {
   MenuItem,
   Select,
   Stack,
-  TableCell,
-  TableRow,
 } from "@mui/material";
 import { ValidationErrors } from "final-form";
 import { Field, Form } from "react-final-form";
@@ -103,7 +101,7 @@ function ProductForm({ onSubmit, initialValues }: ProductFormProps) {
             <Field<string>
               name="isShow"
               type="checkbox"
-              render={({ input, meta }) => {
+              render={({ input }) => {
                 return (
                   <FormControlLabel
                     control={<Checkbox {...input} />}

@@ -1,9 +1,7 @@
 import { FC } from "react";
 import {
   Box,
-  Button,
   Card,
-  CardActions,
   CardContent,
   CardMedia,
   Typography,

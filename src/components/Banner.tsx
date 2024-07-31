@@ -1,4 +1,4 @@
-import { Box, Stack, styled, Typography } from "@mui/material";
+import { Box, Stack, styled } from "@mui/material";
 
 
 const Banner = () => {
