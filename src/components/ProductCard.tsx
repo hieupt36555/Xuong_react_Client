@@ -16,32 +16,7 @@ type ProductCardProps = {
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
   return (
-    // <Card sx={{ maxWidth: 345 }}>
-    //   <CardMedia
-    //     component="img"
-    //     alt="green iguana"
-    //     height="140"
-    //     image={product.image}
-    //     sx={{ objectFit: "contain" }}
-    //   />
-    //   <CardContent>
-    //     <Typography gutterBottom variant="h5" component="div">
-    //       {product.title}
-    //     </Typography>
-    //     <Typography variant="body2" color="text.secondary">
-    //       {product.description}
-    //     </Typography>
-    //   </CardContent>
-    //   <CardActions>
-    //     <Button size="small">Share</Button>
-    //     <Link to={`/product/${product._id}`}>
-    //       <Button size="small" variant="contained">
-    //         Detail
-    //       </Button>
-    //     </Link>
-    //   </CardActions>
-    // </Card>
-   <Link to={`/product/${product._id}`} >
+   <Link to={`/products/${product._id}`} >
    
    <Card sx={{border: '1px solid #ccc', borderRadius: '5px' , width: '250px' , height: '350px',margin: '10px'}} >
       <Box sx={{position: 'relative', height: '60%' }}>

@@ -30,6 +30,8 @@ function ProductDetail() {
       setLoading(true);
       const { data } = await axios.get(`https://xuong-react-server-2.onrender.com/products/${id}`);
       setProduct(data);
+      console.log("haha"+data);
+      
     } catch (error) {
       console.log(error);
     } finally {

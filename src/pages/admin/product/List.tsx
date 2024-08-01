@@ -36,7 +36,7 @@ function AdminProductList() {
   const handleSearch = async (event: React.ChangeEvent<HTMLInputElement>) => {
     setQuery(event.target.value);
     if (event.target.value.length > 1) {
-      const response = await axios.get(`https://xuong-react-server-2.onrender.com/products?q=${event.target.value}`);
+      const response = await axios.get(`/products?q=${event.target.value}`);
       setProducts(response.data);
     } else {
       setProducts([]);
