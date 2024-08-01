@@ -7,13 +7,14 @@ import axios from "axios";
 import { LoadingProvider } from "./contexts/loading.tsx";
 import { UserProvider } from "./contexts/user.tsx";
 
-axios.defaults.baseURL = "http://localhost:3000";
+// axios.defaults.baseURL = "http://localhost:3000";
 
 import { createTheme } from "@mui/material/styles";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import { CartProvider } from "./contexts/cart.tsx";
 import { OderProvider } from "./contexts/oder.tsx";
-
+import { configureAxios } from "./config/axios.ts";
+configureAxios()
 const theme = createTheme({
 
   typography: {
