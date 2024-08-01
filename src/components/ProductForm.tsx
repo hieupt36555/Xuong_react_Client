@@ -25,7 +25,7 @@ function ProductForm({ onSubmit, initialValues }: ProductFormProps) {
   const [categories, setCategories] = useState<Category[]>([]);
 
   const validate = (values: ProductFormParams) => {
-    const { title, image, category, price } = values;
+    const { title, image, price } = values;
     const errors: ValidationErrors = {};
     if (!title) errors.title = "Can nhap title vao";
 

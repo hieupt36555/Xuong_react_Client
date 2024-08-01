@@ -10,7 +10,6 @@ import Cart from "./pages/Cart";
 import Homepage from "./pages/Homepage";
 import ProductDetail from "./pages/ProductDetail";
 import Checkout from "./pages/checkOut";
-import PrivateRoute from "./components/PrivateRouter";
 import ShopList from "./pages/shop";
 import Oder from "./pages/oder";
 
