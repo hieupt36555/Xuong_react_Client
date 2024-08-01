@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-import axios from "axios";
+// import axios from "axios";
 import { LoadingProvider } from "./contexts/loading.tsx";
 import { UserProvider } from "./contexts/user.tsx";
 
